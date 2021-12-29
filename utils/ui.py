@@ -46,6 +46,7 @@ def model_selector():
                 "Decision Tree",
                 "Random Forest",
                 "K Nearest Neighbors",
+                "Support Vector Machine"
             ),
         )
 
@@ -60,6 +61,8 @@ def model_selector():
 
         elif model_type == "K Nearest Neighbors":
             model = knn_param_selector()
+        elif model_type == "Support Vector Machine":
+            model = svc_param_selector()
 
 
 
