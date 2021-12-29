@@ -58,7 +58,7 @@ model_infos = {
         - It works well with high-dimensional data such as text classification problems
         - The assumption that all the features are independent is not always respected in real-life applications
     """,
-    "SVC": """
+    "Support Vector Machine": """
         - SVMs or SVCs are effective when the number of features is larger than the number of samples
         - They provide different type of kernel functions
         - They require careful normalization   
