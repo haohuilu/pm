@@ -6,7 +6,7 @@ model_imports = {
     "Neural Network": "from sklearn.neural_network import MLPClassifier",
     "K Nearest Neighbors": "from sklearn.neighbors import KNeighborsClassifier",
     "Gaussian Naive Bayes": "from sklearn.naive_bayes import GaussianNB",
-    "SVC": "from sklearn.svm import SVC",
+    "Support Vector machine": "from sklearn.svm import SVC",
 }
 
 
