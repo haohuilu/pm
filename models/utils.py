@@ -6,7 +6,7 @@ model_imports = {
     "Neural Network": "from sklearn.neural_network import MLPClassifier",
     "K Nearest Neighbors": "from sklearn.neighbors import KNeighborsClassifier",
     "Gaussian Naive Bayes": "from sklearn.naive_bayes import GaussianNB",
-    "Support Vector machine": "from sklearn.svm import SVC",
+    "Support Vector Machine": "from sklearn.svm import SVC",
 }
 
 
@@ -18,7 +18,7 @@ model_urls = {
     "Neural Network": "https://scikit-learn.org/stable/modules/generated/sklearn.neural_network.MLPClassifier.html",
     "K Nearest Neighbors": "https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KNeighborsClassifier.html",
     "Gaussian Naive Bayes": "https://scikit-learn.org/stable/modules/naive_bayes.html",
-    "SVC": "https://scikit-learn.org/stable/modules/generated/sklearn.svm.SVC.html",
+    "Support Vector Machine": "https://scikit-learn.org/stable/modules/generated/sklearn.svm.SVC.html",
 }
 
 
