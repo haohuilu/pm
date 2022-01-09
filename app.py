@@ -31,7 +31,7 @@ y = df.iloc[:, -1:]
 from sklearn import model_selection
 
 x_train, x_test, y_train, y_test = model_selection.train_test_split(
-    X,y, train_size=0.7, test_size=None, random_state = 2
+    X,y, train_size=0.5, test_size=None, random_state = 2
 )
 
 
