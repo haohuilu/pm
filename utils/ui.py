@@ -28,7 +28,7 @@ def introduction():
     - 🗂️ We use the road construction deley survey as an example (as above). Question 1 - 44 are independent variables (features) and "How often do you experience cost overrun" is dependent variable.
     - ✅ We would like to predict the risk of cost overrun (1 or 2)
     - ⚙️ Pick a model and set its hyper-parameters
-    - 📉 Train it (use 70% of the dataset) and check its performance metrics on test data (30% of the dataset)
+    - 📉 Train it (use 50% of the dataset) and check its performance metrics on test data (50% of the dataset)
     - ✉️ If you have any question, please feel free to email me at haohui.lu@sydney.edu.au
     -----
     """
