@@ -81,6 +81,8 @@ def generate_snippet(
     snippet = f"""
     >>> {model_import}
     >>> from sklearn.metrics import accuracy_score, f1_score
+
+
     >>> model.fit(x_train, y_train)
     
     >>> y_train_pred = model.predict(x_train)
