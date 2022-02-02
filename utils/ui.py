@@ -16,7 +16,7 @@ from utils.functions import img_to_bytes
 
 
 def introduction():
-    st.title("**Case study for Machine Learning in Project Analytics**")
+    st.title("**Machine Learning in Project Analytics**")
     st.subheader(
         """
         This is a place where we can get familiar with machine learning models directly from the browser
