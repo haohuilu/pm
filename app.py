@@ -69,17 +69,17 @@ def body(model, model_type,
     (
         model,
         train_accuracy,
-        #train_f1,
+        train_f1,
         test_accuracy,
-        #test_f1,
+        test_f1,
         duration,
     ) = train_model(model, x_train, y_train, x_test, y_test)
 
     metrics = {
         "train_accuracy": train_accuracy,
-        #"train_f1": train_f1,
+        "train_f1": train_f1,
         "test_accuracy": test_accuracy,
-        #"test_f1": test_f1,
+        "test_f1": test_f1,
     }
 
     snippet = generate_snippet(
