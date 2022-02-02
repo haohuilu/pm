@@ -69,23 +69,23 @@ def plot_decision_boundary_and_metrics(
 
 
 
-    #fig.add_trace(
-    #    go.Indicator(
-    #        mode="gauge+number+delta",
-    #        value=metrics["train_accuracy"],
-    ##        title={"text": f"Accuracy (train)"},
-     #       domain={"x": [0, 1], "y": [0, 1]},
-     #       gauge={"axis": {"range": [0, 1]}},
-     #   ),
-     #   row=2,
-     #   col=1,
-    #)
-
     fig.add_trace(
         go.Indicator(
             mode="gauge+number+delta",
             value=metrics["test_accuracy"],
             title={"text": f"Accuracy (test)"},
+            domain={"x": [0, 1], "y": [0, 1]},
+            gauge={"axis": {"range": [0, 1]}},
+        ),
+        row=2,
+        col=1,
+    )
+
+    fig.add_trace(
+        go.Indicator(
+            mode="gauge+number+delta",
+            value=metrics["test_f1"],
+            title={"text": f"F1 score (test)"},
             domain={"x": [0, 1], "y": [0, 1]},
             gauge={"axis": {"range": [0, 1]}},
         ),
@@ -108,12 +108,12 @@ def train_model(model, x_train, y_train, x_test, y_test):
     y_test_pred = model.predict(x_test)
 
     train_accuracy = np.round(accuracy_score(y_train, y_train_pred), 3)
-    #train_f1 = np.round(f1_score(y_train, y_train_pred, average="weighted"), 3)
+    train_f1 = np.round(f1_score(y_train, y_train_pred, average="weighted"), 3)
 
     test_accuracy = np.round(accuracy_score(y_test, y_test_pred), 3)
-    #test_f1 = np.round(f1_score(y_test, y_test_pred, average="weighted"), 3)
+    test_f1 = np.round(f1_score(y_test, y_test_pred, average="weighted"), 3)
 
-    return model, train_accuracy test_accuracy, duration
+    return model, train_accuracy, train_f1, test_accuracy, test_f1, duration
 
 
 def img_to_bytes(img_path):
