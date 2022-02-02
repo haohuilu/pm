@@ -72,8 +72,8 @@ def plot_decision_boundary_and_metrics(
     fig.add_trace(
         go.Indicator(
             mode="gauge+number+delta",
-            value=metrics["test_accuracy"],
-            title={"text": f"Accuracy (test)"},
+            value=metrics["train_accuracy"],
+            title={"text": f"Accuracy (train)"},
             domain={"x": [0, 1], "y": [0, 1]},
             gauge={"axis": {"range": [0, 1]}},
         ),
@@ -84,8 +84,8 @@ def plot_decision_boundary_and_metrics(
     fig.add_trace(
         go.Indicator(
             mode="gauge+number+delta",
-            value=metrics["test_f1"],
-            title={"text": f"F1 score (test)"},
+            value=metrics["test_accuracy"],
+            title={"text": f"Accuracy (test)"},
             domain={"x": [0, 1], "y": [0, 1]},
             gauge={"axis": {"range": [0, 1]}},
         ),

@@ -16,7 +16,7 @@ from utils.functions import img_to_bytes
 
 
 def introduction():
-    st.title("**Welcome to playground for project analytics**")
+    st.title("**Case study for Machine Learning in Project Analytics**")
     st.subheader(
         """
         This is a place where we can get familiar with machine learning models directly from the browser
@@ -27,7 +27,7 @@ def introduction():
         """
     - 🗂️ We use the road construction deley survey as an example (as above). Question 1 - 44 are independent variables (features) and "How often do you experience cost overrun" is dependent variable.
     - ✅ We would like to predict the risk of cost overrun (1 or 2)
-    - ⚙️ Pick a model and set its hyper-parameters
+    - ⚙️ Pick a model
     - 📉 Train it (use 50% of the dataset) and check its performance metrics on test data (50% of the dataset)
     - ✉️ If you have any question, please feel free to email me at haohui.lu@sydney.edu.au
     -----
@@ -43,7 +43,6 @@ def model_selector():
             "Choose a model",
             (
                 "Logistic Regression",
-                "Decision Tree",
                 "Random Forest",
                 "K Nearest Neighbors",
                 "Support Vector Machine"
@@ -52,9 +51,6 @@ def model_selector():
 
         if model_type == "Logistic Regression":
             model = lr_param_selector()
-
-        elif model_type == "Decision Tree":
-            model = dt_param_selector()
 
         elif model_type == "Random Forest":
             model = rf_param_selector()
